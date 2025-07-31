@@ -108,7 +108,10 @@ function DonutChart({ data }: { data: typeof crowdData }) {
   );
 }
 
+import { useRouter } from "next/navigation";
+
 export default function LunchCrowdChart() {
+  const router = useRouter();
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-50 to-green-100">
       {/* Status Bar */}
@@ -142,7 +145,7 @@ export default function LunchCrowdChart() {
           </p>
 
           {/* Donut Chart */}
-          <div className="flex justify-center mb-8">
+          <div className="flex justify-center mx-auto mb-8 w-full max-w-[350px] sm:max-w-[300px]">
             <DonutChart data={crowdData} />
           </div>
 
@@ -161,7 +164,10 @@ export default function LunchCrowdChart() {
 
           {/* Button */}
           <div className="px-4">
-            <button className="w-full bg-gray-900 text-white py-2 rounded-2xl font-semibold text-lg hover:bg-gray-800 transition-colors">
+            <button
+              className="w-full bg-gray-900 text-white py-2 rounded-2xl font-semibold text-lg hover:bg-gray-800 transition-colors"
+              onClick={() => router.push('/home')}
+            >
               Select Your Preferred Lunch Time
             </button>
 
