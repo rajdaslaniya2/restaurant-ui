@@ -13,7 +13,7 @@ export default function NotificationMuteModal({ isOpen, onClose, onOk }: Notific
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-black/50 backdrop-blur flex items-center justify-center z-50 p-4">
+    <div className="fixed inset-0 bg-black/50 !backdrop-blur flex items-center justify-center z-50 p-4">
       <div className="bg-white rounded-2xl p-6 w-full max-w-sm mx-4">
         <h3 className="text-lg font-semibold mb-8 text-center text-gray-800">
           Mute Meal Notification for

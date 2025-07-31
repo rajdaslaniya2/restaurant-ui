@@ -20,7 +20,7 @@ export default function LunchMenuBottomSheet({ isOpen, onClose, onAdd }: LunchMe
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-end justify-center bg-black/50 backdrop-blur">
+    <div className="fixed inset-0 z-50 flex items-end justify-center bg-black/50 !backdrop-blur">
       <div className="relative w-full max-w-md">
         {/* Close button positioned above the modal */}
         <button
