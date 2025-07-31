@@ -11,7 +11,7 @@ export default function LoginPage() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-green-50 to-green-100 flex flex-col">
             {/* Status Bar */}
-            <div className="flex justify-between items-center px-6 pt-3 pb-2 text-black">
+            <div className="flex justify-between items-center px-6 pt-3 pb-2 text-black max-w-3xl mx-auto w-full">
                 <span className="font-semibold text-lg">9:41</span>
                 <div className="flex items-center space-x-1">
                     <div className="flex space-x-1">
@@ -83,7 +83,7 @@ export default function LoginPage() {
                 </div>
 
                 {/* Form Container with White Background */}
-                <div className="w-full max-w-sm bg-white rounded-3xl rounded-b-none px-6 py-6 shadow-sm">
+                <div className="w-full max-w-3xl mx-auto bg-white rounded-3xl rounded-b-none px-6 py-6 shadow-sm">
                     <h1 className="text-2xl font-semibold text-gray-900 mb-6 text-center">Login</h1>
 
                     <div className="space-y-4">

@@ -111,7 +111,7 @@ export default function LunchCrowdChart() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-50 to-green-100">
       {/* Status Bar */}
-      <div className="w-full max-w-sm mx-auto">
+      <div className="w-full max-w-3xl mx-auto">
         <div className="flex justify-between items-center pt-3 pb-2 text-black">
           <span className="font-semibold text-lg">9:41</span>
           <div className="flex items-center space-x-1">
@@ -138,7 +138,7 @@ export default function LunchCrowdChart() {
         </div>
 
         {/* Welcome Text */}
-        <h1 className="text-2xl font-bold text-gray-900 mb-6 text-center px-6">
+        <h1 className="text-3xl font-bold text-gray-900 mb-6 text-center px-6">
           Welcome Dhiren Devganiya
         </h1>
 

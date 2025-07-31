@@ -60,7 +60,7 @@ export default function HomeMenu() {
   };
 
   return (
-    <div className="min-h-screen ">
+    <div className="min-h-screen max-w-3xl mx-auto">
       {/* Status Bar */}
       <div className="flex justify-between items-center px-4 pt-3 pb-1 bg-white">
         <span className="font-semibold text-lg">9:41</span>
