@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import { Eye, EyeOff, Wifi } from "lucide-react";
+import { EyeOff, Eye } from "lucide-react";
+import TopNavbar from "../components/TopNavbar";
 
 export default function LoginPage() {
     const [username, setUsername] = useState("");
@@ -13,18 +14,7 @@ export default function LoginPage() {
             {/* Status Bar */}
             <div className="flex justify-between items-center px-6 pt-3 pb-2 text-black max-w-3xl mx-auto w-full">
                 <span className="font-semibold text-lg">9:41</span>
-                <div className="flex items-center space-x-1">
-                    <div className="flex space-x-1">
-                        <div className="w-1 h-3 bg-black rounded-full"></div>
-                        <div className="w-1 h-3 bg-black rounded-full"></div>
-                        <div className="w-1 h-3 bg-black rounded-full"></div>
-                        <div className="w-1 h-3 bg-gray-400 rounded-full"></div>
-                    </div>
-                    <Wifi className="w-4 h-4 text-black ml-2" />
-                    <div className="w-6 h-3 bg-black rounded-sm ml-1">
-                        <div className="w-full h-full bg-green-500 rounded-sm"></div>
-                    </div>
-                </div>
+                <TopNavbar currentPage="login" />
             </div>
 
             {/* Main Content */}

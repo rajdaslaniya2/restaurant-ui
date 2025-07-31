@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { Wifi } from "lucide-react";
+import TopNavbar from "../components/TopNavbar";
 
 const crowdData = [
   { label: "12:00 PM (24%)", value: 24, color: "#22c55e", time: "12:00" },
@@ -112,20 +113,9 @@ export default function LunchCrowdChart() {
     <div className="min-h-screen bg-gradient-to-br from-green-50 to-green-100">
       {/* Status Bar */}
       <div className="w-full max-w-3xl mx-auto">
-        <div className="flex justify-between items-center pt-3 pb-2 text-black">
+        <div className="flex justify-between items-center pt-3 pb-2 text-black px-6">
           <span className="font-semibold text-lg">9:41</span>
-          <div className="flex items-center space-x-1">
-            <div className="flex space-x-1">
-              <div className="w-1 h-3 bg-black rounded-full"></div>
-              <div className="w-1 h-3 bg-black rounded-full"></div>
-              <div className="w-1 h-3 bg-black rounded-full"></div>
-              <div className="w-1 h-3 bg-gray-300 rounded-full"></div>
-            </div>
-            <Wifi className="w-4 h-4 text-black" />
-            <div className="w-6 h-3 border border-black rounded-sm">
-              <div className="w-4 h-2 bg-black rounded-sm m-0.5"></div>
-            </div>
-          </div>
+          <TopNavbar currentPage="lunchtime" />
         </div>
 
         {/* Profile */}

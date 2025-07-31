@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { Search, Menu, Bell, Heart, Plus, X } from "lucide-react";
+import TopNavbar from "../components/TopNavbar";
 import NotificationMuteModal from "../components/NotificationMuteModal";
 import LunchMenuBottomSheet from "../components/LunchMenuBottomSheet";
 
@@ -64,17 +65,7 @@ export default function HomeMenu() {
       {/* Status Bar */}
       <div className="flex justify-between items-center px-4 pt-3 pb-1 bg-white">
         <span className="font-semibold text-lg">9:41</span>
-        <div className="flex items-center space-x-1">
-          <div className="flex space-x-1">
-            <div className="w-1 h-3 bg-black rounded-full"></div>
-            <div className="w-1 h-3 bg-black rounded-full"></div>
-            <div className="w-1 h-3 bg-black rounded-full"></div>
-            <div className="w-1 h-3 bg-gray-300 rounded-full"></div>
-          </div>
-          <div className="w-6 h-3 border border-black rounded-sm">
-            <div className="w-4 h-2 bg-black rounded-sm m-0.5"></div>
-          </div>
-        </div>
+        <TopNavbar currentPage="home" />
       </div>
 
       {/* Top Bar */}
